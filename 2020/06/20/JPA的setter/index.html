@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="jpa、setter," />
 
 
 
@@ -79,14 +79,19 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="关于">
-<meta property="og:url" content="http://yoursite.com/about/index.html">
+<meta name="description" content="| 工作不止，BUG不止 问题描述​    这个问题怎么说咧，这个事情已经发生了很久很久了。所以我也没法贴代码，权当记录自己走的坑。问题是这样的，我用JPA查询了一条语句，数据一点问题都没有，到我代码块的下一条sql语句之前都是正常的。一旦执行下一条语句，你会惊奇的发现这一块代码啥也没干，就好像没有这一串代码似的，但是debug却能走到代码块里面。当时我就彻底纳闷了，我仔细读了一下代码发现自己并没">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JPA的setter">
+<meta property="og:url" content="http://yoursite.com/2020/06/20/JPA%E7%9A%84setter/index.html">
 <meta property="og:site_name" content="CHE PENG BLOG">
-<meta property="article:published_time" content="2020-05-17T11:48:57.000Z">
-<meta property="article:modified_time" content="2020-05-17T11:51:33.028Z">
+<meta property="og:description" content="| 工作不止，BUG不止 问题描述​    这个问题怎么说咧，这个事情已经发生了很久很久了。所以我也没法贴代码，权当记录自己走的坑。问题是这样的，我用JPA查询了一条语句，数据一点问题都没有，到我代码块的下一条sql语句之前都是正常的。一旦执行下一条语句，你会惊奇的发现这一块代码啥也没干，就好像没有这一串代码似的，但是debug却能走到代码块里面。当时我就彻底纳闷了，我仔细读了一下代码发现自己并没">
+<meta property="og:image" content="http://yoursite.com/2020/06/20/JPA%E7%9A%84setter/setter.png">
+<meta property="article:published_time" content="2020-06-20T08:44:22.000Z">
+<meta property="article:modified_time" content="2020-06-20T09:16:53.976Z">
 <meta property="article:author" content="Che Peng">
+<meta property="article:tag" content="jpa、setter">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/2020/06/20/JPA%E7%9A%84setter/setter.png">
 
 
 
@@ -116,13 +121,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/about/"/>
+  <link rel="canonical" href="http://yoursite.com/2020/06/20/JPA的setter/"/>
 
 
 
 
 
-  <title>关于 | CHE PENG BLOG</title>
+  <title>JPA的setter | CHE PENG BLOG</title>
   
 
 
@@ -267,33 +272,235 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/20/JPA%E7%9A%84setter/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Che Peng">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/head.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="CHE PENG BLOG">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">关于</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
+          <h1 class="post-title" itemprop="name headline">JPA的setter</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-06-20T16:44:22+08:00">
+                2020-06-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-      </div>
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/problem/" itemprop="url" rel="index">
+                    <span itemprop="name">problem</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  374
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <p>| 工作不止，BUG不止</p>
+<h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>​    这个问题怎么说咧，这个事情已经发生了很久很久了。所以我也没法贴代码，权当记录自己走的坑。问题是这样的，我用JPA查询了一条语句，数据一点问题都没有，到我代码块的下一条sql语句之前都是正常的。一旦执行下一条语句，你会惊奇的发现这一块代码啥也没干，就好像没有这一串代码似的，但是debug却能走到代码块里面。当时我就彻底纳闷了，我仔细读了一下代码发现自己并没有什么违规操作。为什么就不能运行。难道是sql写错了，既然有了猜想，我就去大胆验证。当然，这也就证明了我的猜想是错的，哈哈哈。还甭说，我以为我发现了hibernate的bug，当时那欠揍的笑，我都想自己抽自己两个大耳瓜子。当然bug归bug，问题得解决啊。没办法，我只能求助部门大佬帮我解决这个问题。大佬一来就发现了问题所在，那笑容比我更那啥了（这我就不描述了）。</p>
+<p>大佬解释道，你的setter使hibernate会任务session中的实体发生了改变，会通过get方法比较属性，执行了脏检查。</p>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>一、换一个对象接收你要setter的属性</p>
+<p>二、设置配置文件</p>
+<p><img src="/2020/06/20/JPA%E7%9A%84setter/setter.png" alt></p>
+
       
     </div>
     
     
     
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>Donate comment here</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/WeChatPayCode.png" alt="Che Peng 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/AliPayCode.png" alt="Che Peng 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/jpa%E3%80%81setter/" rel="tag"># jpa、setter</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/06/20/encode%E4%B8%8Edecode/" rel="next" title="encode与decode">
+                <i class="fa fa-chevron-left"></i> encode与decode
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/06/20/sql%E6%9F%A5%E8%AF%A2%E7%9A%84list%E6%95%B0%E6%8D%AE%E9%83%BD%E6%98%AF%E4%B8%80%E6%A0%B7/" rel="prev" title="sql查询的list数据都是一样">
+                sql查询的list数据都是一样 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -326,8 +533,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -407,6 +623,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#问题描述"><span class="nav-number">1.</span> <span class="nav-text">问题描述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解决方案"><span class="nav-number">2.</span> <span class="nav-text">解决方案</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
